@@ -1,23 +1,23 @@
 import {browser, by, element} from 'protractor';
 
 export class AppPage {
-  static navigateTo() {
+  navigateTo() {
     return browser.get('/');
   }
 
-  static getParagraphText() {
+  getParagraphText() {
     return element(by.css('app-root h1')).getText();
   }
 
-  static getPoints() {
+  getPoints() {
     return element(by.cssContainingText('div', 'Points')).$('span').getText();
   }
 
-  static getPlusOneButton() {
+  getPlusOneButton() {
     return element(by.cssContainingText('button', 'Plus 1'));
   }
 
-  static getResetButton() {
+  getResetButton() {
     return element(by.cssContainingText('button', 'Reset'));
   }
 }

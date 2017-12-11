@@ -6,7 +6,7 @@ export class TestService {
   constructor() {
   }
 
-  public static add(a: number, b: number): number {
+  public add(a: number, b: number): number {
     return a + b;
   }
 
