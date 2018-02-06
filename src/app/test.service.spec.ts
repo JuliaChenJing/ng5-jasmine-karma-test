@@ -1,6 +1,6 @@
-import {inject, TestBed} from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 
-import {TestService} from './test.service';
+import { TestService } from './test.service';
 
 describe('TestService', () => {
   beforeEach(() => {
@@ -17,7 +17,8 @@ describe('TestService', () => {
     expect(service.add).toBeTruthy();
   }));
 
-  it('should add correctly', inject([TestService], (service: TestService) => {
-    expect(service.add(1, 2)).toEqual(3);
+  it('should  add correclty', inject([TestService], (service: TestService) => {
+    let result: number = service.add(1, 2);
+    expect(result).toEqual(3);
   }));
 });
