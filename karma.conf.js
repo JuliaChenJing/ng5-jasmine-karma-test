@@ -30,7 +30,8 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome' /*, 'IE'*/],
+    //npm install karma-ie-launcher --save-dev
+    browsers: ['Chrome' /*, 'IE', 'Firefox'*/],
     singleRun: false
   });
 };
